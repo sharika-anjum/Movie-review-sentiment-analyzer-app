@@ -1,14 +1,14 @@
 # Movie-review-sentiment-analyzer-app
 
-In today's world, while going with the ratings of the movie, we often tend to forget to go through the reviews and judge the sentiment of the audience , because who will go through big reviews!
+In today's world, we judge a movie by it's rating and tend to forget to consider the written reviews, because who will go through those big reviews!
 
-But as human we prefer is? A verbal review of the movie or the series from a very known person of ours who have seen it.
+But while going through movies and web series' review in this lock down, I found that there are cases where an audience gave good ratings with a very bad written review and vice versa. And here's where we get mislead about the actual review.
 
-So here's why comes, my Movik_app, inspite of just going by public ratings , it also goes by public sentiments in the written reviews using Natural language processing.
+That's why I come up with my web app, Movik_app, which inspite of just going by public ratings , it also goes by public sentiments in the written reviews using Natural language processing.
 
-So once, a movie/series name is provided by the user to my app. My app gives the public ratings and predicts the public sentiment by juding the written reviews.
+So once, a movie/series name is provided by the user to my app. My app gives the public ratings and predicts the public sentiment by judging the written reviews and thus public don't need to go through the big written reviews to get the actual review of the movie/series.
 
-# And here' s Movik_App stands out in the crowd.
+# And here's why Movik_App stands out in the crowd.
 
 Back-end web development :
 Language used - Python
