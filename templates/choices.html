@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Movie Review Sentiment Analyzer-Choices</title>
+</head>
+<body style="background-color: black;">
+
+    <nav class="navbar">        <!--Creating a navbar-->
+        <h1 class="navbar-brand text-light" style = "font-family:Comic Sans MS; font-size:45px;position:fixed;top:5px;"><strong>Movik_App</strong></h1>
+    </nav>
+    <br>
+    <div class="icons" style="align-items:center; justify-content:center; text-align:center">
+        <i class="fas fa-theater-masks" style="color: cornsilk; font-size: 125px;"></i>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="offset-2 col-md-8 mt-2">
+                <h1 class="text-light" style="text-align: center; margin-top: 30px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><strong>IMDB MOVIE REVIEW & SENTIMENT ANALYZER</strong></h1>
+                <br>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    {% if idx %}
+    <div class="instruction" style="align-items: center;
+                justify-content: center;
+                text-align: center;">
+        <p class="text" style="color: lightgreen;"><strong>Displaying movie names on the basis of your search</strong></p>
+        <p class="text-light"><marquee width = "400">Click on the appropriate movie to see the review</marquee></p>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <table>
+            <tbody class="table table-stripped" style="align-items: center;
+            text-align: center; display: table-row-group;">
+                <tr>
+                    <th class="text-light">Your selection</th>
+                    <th class="text-light">Movie Title</th>
+                    <th class="text-light">Year of Release</th>
+                </tr>
+                {% for i in range(idx|length) %}
+                <tr>
+                    <form method="POST"></form>
+                    <td class="text-light">
+                        <a href="{{ url_for('review', type = idx[i])}}"><button class="btn btn-large btn-warning text-dark"><b>Select</b></button></a> <!--<input class="btn text-light" name="id" type="submit" value={{idx[i]}}>-->
+                    </td>
+                    <td class="text-light">
+                        {{movie[i]}}
+                    </td>
+                    <td class="text-light">
+                        {{yor[i]}}
+                    </td>
+                {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+        {% else %}
+            <p class="text-center text-info"><b>Sorry! But we don't have any such movie name as of now.</b> </p>
+        {% endif %}
+
+
+    </div>
+    <br><br>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <a class ="btn btn-warning text-dark" href="/" style = "position:fixed;top:300px;left:5px;"><b>Home</b></a>
+
+
+
+
+
+    <footer>
+        <p class = "text-center text-light" style = "padding: 50px">Copyright &copy; 2020, Sharika Anjum Mondal</p>
+    </footer>
+</body>
+</html>
