@@ -1,6 +1,6 @@
 # Movie-review-sentiment-analyzer-app
 
-In today's world, we judge a movie by it's rating and tend to forget to consider the written reviews, because who will go through those big reviews!
+In today's world, we judge a movie by it's rating and tend to forget considering the written reviews, because who will go through those big reviews!
 
 But while going through movies and web series' review in this lock down, I found that there are cases where an audience gave good ratings with a very bad written review and vice versa. And here's where we get mislead about the actual review.
 
