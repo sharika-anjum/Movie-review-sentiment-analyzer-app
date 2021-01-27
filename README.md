@@ -20,6 +20,9 @@ CSS
 Bootstrap
 JS
 
+Deployed in - heroku
+
 Machine Learning models:
 BernoulliNB algorithm & 2 NLP functions
 
+***Website link - https://movik-app.herokuapp.com/  ***
